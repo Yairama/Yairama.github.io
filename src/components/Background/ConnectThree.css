@@ -1,7 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Header */
 .large-header {
     position: relative;
-    width: 100%;
+    width: 100vh;
+    height: 100vh; /* Esto asegura que el header tenga al menos el alto de la pantalla */
     background: #333;
     overflow: hidden;
     background-size: cover;
@@ -10,8 +17,13 @@
 }
 
 #large-header {
-    background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
+    background-image: url('https://wallpapers.com/images/hd/interstellar-endurance-at-gargantua-al7pib6oup072coa.jpg');
+    background-size: cover; /* Asegura que la imagen de fondo cubra completamente el espacio */
+    background-position: center center; /* Centra la imagen de fondo */
+    width: 100%; /* Asegura que tome todo el ancho disponible */
+    height: 100%; /* Asegura que tome todo el alto disponible */
 }
+
 
 .main-title {
     position: absolute;
@@ -21,8 +33,8 @@
     text-align: center;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .demo-1 .main-title {
@@ -35,7 +47,7 @@
     font-weight: 200;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1000px) {
     .demo-1 .main-title {
         font-size: 3em;
     }
